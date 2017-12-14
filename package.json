@@ -26,7 +26,7 @@
   "license": "LGPLv3",
   "homepage": "https://github.com/lsycxyj/vue-l-carousel",
   "dependencies": {
-    "vue": "^2.1.8"
+    "vue": "2.5.8"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",
@@ -75,7 +75,7 @@
     "url-loader": "^0.5.7",
     "vue-loader": "^10.0.0",
     "vue-style-loader": "^1.0.0",
-    "vue-template-compiler": "^2.1.0",
+    "vue-template-compiler": "2.5.8",
     "webpack": "^1.14.0",
     "webpack-merge": "^2.3.1"
   },

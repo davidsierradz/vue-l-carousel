@@ -1,18 +1,18 @@
 <style lang="less">
-	.v-carousel {
+	div#app .v-carousel {
 		&-items {
 			overflow: hidden;
 		}
 		&-dots {
 			position: absolute;
-			bottom: 10px;
-			left: 0;
-			width: 100%;
+			bottom: 50px;
+			left: 66%;
+			width: 33%;
 			text-align: center;
 		}
 		&-dot {
 			&.active {
-				background: #000;
+				background: #fff;
 				cursor: default;
 			}
 			cursor: pointer;
@@ -25,10 +25,12 @@
 		}
 		&-nav {
 			&.prev {
-				left: 0;
+				bottom: 45px;
+				right: 32%;
 			}
 			&.next {
-				right: 0;
+				bottom:45px;
+				right: 3%;
 			}
 			@h: 30px;
 			cursor: pointer;
@@ -36,13 +38,28 @@
 			line-height: @h;
 			color: #FFF;
 			padding: 0 5px;
-			background: rgba(0, 0, 0, .5);
-			top: 50%;
 			margin-top: -@h / 2;
 		}
 		width: 100%;
 		overflow: hidden;
 		position: relative;
+		margin: 2rem 0;
+	}
+
+	@media all and (max-width: 996px) {
+		div#app .v-carousel {
+			&-dots {
+				left: 0;
+				width: 100%;
+				top: 56vw;
+				bottom: unset;
+			}
+			&-nav {
+				&.prev {
+					right: 93.5%;
+				}
+			}
+		}
 	}
 </style>
 
